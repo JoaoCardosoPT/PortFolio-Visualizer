@@ -120,3 +120,51 @@ button:disabled {
     transition: none;
   }
 }
+
+/* Price card */
+main > section {
+  width: 100%;
+  max-width: 468px;
+  margin-top: 28px;
+  padding: clamp(20px, 5vw, 32px);
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgb(15 23 42 / 5%);
+}
+
+/* Crypto symbol */
+main > section h2 {
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #eef2f6;
+  color: #475569;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+/* Price */
+main > section p:first-of-type {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+/* Last updated */
+main > section p:last-of-type {
+  margin: 24px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid #eef2f6;
+  color: #64748b;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
