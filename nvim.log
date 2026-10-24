@@ -1,0 +1,17 @@
+WRN 2026-10-23T22:17:56.331 ?.16342    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/6wELOH/nvim.16342.0
+WRN 2026-10-23T22:18:09.462 ?.16411    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/hHBpvO/nvim.16411.0
+WRN 2026-10-23T22:33:01.127 ?.22674    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/YkuvuI/nvim.22674.0
+WRN 2026-10-24T00:51:34.705 ?.23663    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/m7Pazg/nvim.23663.0
+WRN 2026-10-24T00:54:05.829 ?.23732    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/63iNWN/nvim.23732.0
+WRN 2026-10-24T00:59:09.204 ?.24681    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/7LvVcR/nvim.24681.0
+WRN 2026-10-24T14:56:01.265 ?.28185    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/AjrClV/nvim.28185.0
+WRN 2026-10-24T14:56:19.480 ?.28197    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/wcTxoz/nvim.28197.0
+WRN 2026-10-24T15:03:44.154 ?.28726    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/CoiMqg/nvim.28726.0
+WRN 2026-10-24T15:18:37.793 ?.29938    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/wuIOeP/nvim.29938.0
+WRN 2026-10-24T15:18:41.373 ?.29941    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/RC4nKj/nvim.29941.0
+WRN 2026-10-24T15:18:51.884 ?.29943    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/CCTKrs/nvim.29943.0
+WRN 2026-10-24T15:26:49.589 ?.30737    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/MmfZej/nvim.30737.0
+WRN 2026-10-24T15:27:22.007 ?.30745    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/t608vV/nvim.30745.0
+WRN 2026-10-24T15:28:34.737 ?.31067    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/0MVwUc/nvim.31067.0
+WRN 2026-10-24T15:29:28.750 ?.31122    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/btJqRG/nvim.31122.0
+WRN 2026-10-24T15:31:43.008 ?.31570    server_start:197: Failed to start server: operation not permitted: /var/folders/2n/0263hf1x7xx595bp678svgl40000gn/T/nvim.joaocardoso/ypEzCu/nvim.31570.0

@@ -1,25 +1,35 @@
 import requests
 
-def data(symbol):
-    url = f"https://api.diadata.org/v1/quotation/{symbol.upper()}"
+def data(symbol, interval="1h", limit=100):
+    response = requests.get(f"https://api.diadata.org/v1/quotation/{symbol.strip().upper()}", timeout=10,)
 
-    try:
-        response = requests.get(url, timeout=4)
+    response.raise_for_status()
+    return response.json()
 
-        if response.status_code == 200:
-           data = response.json()
+def fetch_candles(symbol, interval="1h", limit=100):
+    response = requests.get(
+        "https://data-api.binance.vision/api/v3/klines",
+        params={
+            "symbol": symbol.strip().upper(),
+            "interval": interval,
+            "limit": limit,
+        },
+        timeout=10,
+    )
 
-           symbol = data.get("Symbol")
-           price = data.get("Price")
-           time = data.get("Time")
+    response.raise_for_status()
+    raw_candles = response.json()
 
-           return data
-        elif response.status_code == 404:
-            print(f"Error: The Symbol {symbol} is not available")
-            return None
-        else:
-            print(f"Error")
-            return None
-    except requests.exceptions.RequestException as e:
-        print("Connection Error")
-        return None
+    candles = []
+
+    for candle in raw_candles:
+        candles.append({
+            "time": candle[0] // 1000,
+            "open": float(candle[1]),
+            "high": float(candle[2]),
+            "low": float(candle[3]),
+            "close": float(candle[4]),
+            "volume": float(candle[5]),
+        })
+
+    return candles

@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException, Query, status
-from data import data
+from data import data, fetch_candles
 
 app = FastAPI(title="Crypto API")
 # define our route
@@ -15,5 +15,9 @@ def get_quote(symbol: str = Query(..., description="Crypto Symbol")):
     
     if result is None:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Not possible to obtain data")
+    return {"data": result} 
 
-    return {"data": result}
+@app.get("/api/candles")
+def get_candles(symbol: str = Query(...), interval: str = "1h", limit: int = Query(24, ge=1, le=1000), ):
+    candles = fetch_candles(symbol, interval, limit)
+    return {"data": candles}
