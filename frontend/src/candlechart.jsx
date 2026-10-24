@@ -37,12 +37,12 @@ export default function CandleChart({ candles }) {
     })
 
   return (
-    <div className="chart-scroll" tabIndex={0} role="region" aria-label="Price chart, scroll horizontally on small screens">
+    <div className="chart-scroll" tabIndex={0} role="region" aria-label="Price chart">
       <svg
         className="candle-chart"
         viewBox={`0 0 ${width} ${height}`}
         role="img"
-        aria-label="Candlestick chart, prices in USDT and times in UTC"
+        aria-label="Candlestick chart"
       >
         {Array.from({ length: 5 }, (_, index) => {
           const price = minPrice + ((maxPrice - minPrice) * index) / 4
