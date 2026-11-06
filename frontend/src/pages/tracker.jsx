@@ -1,12 +1,12 @@
 import { useState } from "react"
 
+// TODO - Improve UI of the table
 export default function Tracker(){
   const [portfolios, Setportfolios] = useState([])
   const [portfolioName, SetportfolioName] = useState('')
-  
+ 
   function portcreation(event){
     event.preventDefault()
-
     const name = portfolioName.trim()
     if (!name) return
     
@@ -14,8 +14,12 @@ export default function Tracker(){
     const newPortfolio = {
       id: crypto.randomUUID(),
       name,
-      holdihgs: [],
+      holdings: [],
     }
+
+    const exists = portfolios.some((portfolio) => portfolio.name.toLowerCase() === name.toLowerCase);
+    if (exists) return;
+
     // Creates a new array containing the existing portfolios and the new one
     Setportfolios((previous) => [...previous, newPortfolio])
     SetportfolioName('')
@@ -28,17 +32,19 @@ export default function Tracker(){
       <form onSubmit={portcreation}>
         <label htmlFor="Portfolio-Name">Portfolio Name</label>
         <input
-          id="Portfolio-Name" type="text" placeholder="e.g Long Term" value={portfolioName} onChange={(event) => portcreation(event.target.value)}
+          id="Portfolio-Name" type="text" placeholder="e.g Long Term" value={portfolioName} onChange={(event) => SetportfolioName(event.target.value)}
         required
         />
-        <button type="submit" disabled={!portfolioName.trim()}>Create</button>
+        <button type="submit">Create</button>
       </form>
 
-      <ul>
+      <tbody>
         {portfolios.map((portfolio) => (
-          <li key={portfolio.id}>{portfolio.name}</li>
+          <tr key={portfolio.id}>
+            <td>{portfolio.name}</td>
+          </tr>
         ))}
-      </ul>
+      </tbody>
     </main>
   )
 }
